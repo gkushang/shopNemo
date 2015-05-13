@@ -2,8 +2,11 @@
 
 module.exports = function offer_details_steps() {
 
+    this.World = require("../../cucumber/world").World;
+
     this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
-        callback.pending();
+        this.driver.get(this.config.get('data').baseUrl);
+        callback();
     });
 
     this.Then(/^I ask to see Affiliate Offer tile$/, function(callback) {

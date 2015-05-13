@@ -13,9 +13,9 @@
     "grunt-cucumberjs": "^0.5.2",
     "grunt-debug-task": "^0.1.5",
     "grunt-config-dir": "^0.3.2",
-    "nconf": "~0.7.1",
+    "nconf": "^0.7.1",
     "nemo": "^1.0.5",
-    "q": "1.0.0",
+    "q": "^1.0.0",
     "underscore": "^1.7.0"
   },
   "dependencies": {

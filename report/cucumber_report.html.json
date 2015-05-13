@@ -26,7 +26,8 @@
 						"line": 11,
 						"keyword": "Given ",
 						"result": {
-							"status": "pending"
+							"duration": 3891669,
+							"status": "passed"
 						},
 						"match": {}
 					},
@@ -35,7 +36,7 @@
 						"line": 12,
 						"keyword": "When ",
 						"result": {
-							"status": "skipped"
+							"status": "pending"
 						},
 						"match": {}
 					},
@@ -49,13 +50,13 @@
 						"match": {}
 					}
 				],
-				"passed": 0,
+				"passed": 1,
 				"failed": 0,
 				"notdefined": 0,
-				"skipped": 3
+				"skipped": 2
 			}
 		],
-		"passed": 0,
+		"passed": 1,
 		"failed": 0,
 		"relativeFolder": ""
 	}
