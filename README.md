@@ -1,0 +1,2 @@
+# Shop Acceptance tests
+# shopNemo
