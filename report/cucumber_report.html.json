@@ -1,0 +1,62 @@
+[
+	{
+		"id": "Offers-Details",
+		"name": "Offers Details",
+		"description": "\nAs a merchant\nI want to create affiliate and CLO offers\nSo that I can see them in PayPal Shop",
+		"line": 1,
+		"keyword": "Feature",
+		"uri": "/Users/kugajjar/Documents/workspace/shopNemo/features/offer_details.feature",
+		"elements": [
+			{
+				"name": "Offer Details on tile should match with Affiliate Offer",
+				"id": "Offers-Details;offer-details-on-tile-should-match-with-affiliate-offer",
+				"line": 9,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@affiliate_details_tile",
+						"line": 8
+					}
+				],
+				"steps": [
+					{
+						"name": "an Affiliate Offer is in Shop",
+						"line": 11,
+						"keyword": "Given ",
+						"result": {
+							"status": "pending"
+						},
+						"match": {}
+					},
+					{
+						"name": "I ask to see Affiliate Offer tile",
+						"line": 12,
+						"keyword": "When ",
+						"result": {
+							"status": "skipped"
+						},
+						"match": {}
+					},
+					{
+						"name": "I see Affiliate offer information on tile",
+						"line": 13,
+						"keyword": "Then ",
+						"result": {
+							"status": "skipped"
+						},
+						"match": {}
+					}
+				],
+				"passed": 0,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 3
+			}
+		],
+		"passed": 0,
+		"failed": 0,
+		"relativeFolder": ""
+	}
+]
