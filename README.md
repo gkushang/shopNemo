@@ -1,3 +1,1 @@
-# Shop Acceptance tests
-# shopNemo
-# shopNemo
+### Shop Acceptance tests
