@@ -1,0 +1,6 @@
+{
+  "merchantName": {
+    "type": "css",
+    "locator": ".offerDetails>.offerInformation>.merchantName.ng-binding"
+  }
+}

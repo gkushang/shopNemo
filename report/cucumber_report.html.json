@@ -26,34 +26,35 @@
 						"line": 11,
 						"keyword": "Given ",
 						"result": {
-							"duration": 3891669,
+							"duration": 16035852,
 							"status": "passed"
 						},
 						"match": {}
 					},
 					{
-						"name": "I ask to see Affiliate Offer tile",
+						"name": "I ask for offer details",
 						"line": 12,
 						"keyword": "When ",
 						"result": {
-							"status": "pending"
+							"duration": 6415105681,
+							"status": "passed"
 						},
 						"match": {}
 					},
 					{
-						"name": "I see Affiliate offer information on tile",
+						"name": "I am presented with the offer modal",
 						"line": 13,
 						"keyword": "Then ",
 						"result": {
-							"status": "skipped"
+							"status": "pending"
 						},
 						"match": {}
 					}
 				],
-				"passed": 1,
+				"passed": 2,
 				"failed": 0,
 				"notdefined": 0,
-				"skipped": 2
+				"skipped": 1
 			}
 		],
 		"passed": 1,

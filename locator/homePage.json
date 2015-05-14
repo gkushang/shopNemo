@@ -1,0 +1,11 @@
+{
+  "offersTab": {
+    "type": "css",
+    "locator": ".offersTab"
+  },
+
+  "allOffersText": {
+    "type": "css",
+    "locator": "#offersContainer>.tabTitle.ng-scope>h1"
+  }
+}

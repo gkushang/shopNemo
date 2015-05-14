@@ -1,6 +1,13 @@
 {
+  "plugins": {
+    "view": {
+      "module": "nemo-view",
+      "arguments": ["path:locator"]
+    }
+  },
+
   "driver": {
-    "browser": "firefox"
+    "browser": "chrome"
   }
 }
 
