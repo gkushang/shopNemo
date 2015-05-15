@@ -62,6 +62,6 @@ module.exports = function offer_details_steps() {
     }
 
     function assertOfferTitle(title) {
-        title.should.equal(offerTitle);
+        title.should.contains(offerTitle);
     }
 };
