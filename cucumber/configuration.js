@@ -20,7 +20,13 @@ Configuration.prototype.override = function override() {
     }
 
     if (sauce !== undefined) {
+
         console.log('test ran on sauce labs ' + sauce + ' browser');
+
+        if(sauceConfig[sauce] === undefined) {
+            throw new Error('SAUCE value ' + sauce + ' does not exists. Please verify your command line arguments.');
+        }
+
         config = _.extend(require('../config/' + env + '.json'), sauceConfig[sauce]);
     }
 

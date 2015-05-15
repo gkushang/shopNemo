@@ -7,23 +7,33 @@ var myHooks = function () {
 
         var driver = this.driver;
 
-        this.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
+        if(this.isSauce !== undefined) {
+            this.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
+
+        }else {
+            quitDriver();
+        }
 
         function quitDriver() {
             driver.quit();
             callback();
         }
 
-     });
+    });
 
     this.Before(function (scenario, next) {
 
         console.log('Running Scenario: ' + scenario.getName());
 
-        this.nemo.saucelabs.updateJob({
-            name: scenario.getName(),
-            cucumber_tags: scenario.getTags()
-        }, next);
+        if(this.isSauce !== undefined) {
+            this.nemo.saucelabs.updateJob({
+                name: scenario.getName(),
+                cucumber_tags: scenario.getTags()
+            }, next);
+
+        }else {
+            next();
+        }
 
     });
 };

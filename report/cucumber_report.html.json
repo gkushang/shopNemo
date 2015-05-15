@@ -25,7 +25,7 @@
 						"keyword": "Before ",
 						"hidden": true,
 						"result": {
-							"duration": 6742737710,
+							"duration": 499624,
 							"status": "passed"
 						},
 						"match": {}
@@ -35,7 +35,7 @@
 						"line": 11,
 						"keyword": "Given ",
 						"result": {
-							"duration": 17397965,
+							"duration": 17453266,
 							"status": "passed"
 						},
 						"match": {}
@@ -45,7 +45,7 @@
 						"line": 12,
 						"keyword": "When ",
 						"result": {
-							"duration": 3985191,
+							"duration": 4272031,
 							"status": "passed"
 						},
 						"match": {}
@@ -55,7 +55,7 @@
 						"line": 13,
 						"keyword": "Then ",
 						"result": {
-							"duration": 11619420227,
+							"duration": 6377134006,
 							"status": "passed"
 						},
 						"match": {}
@@ -64,7 +64,7 @@
 						"keyword": "After ",
 						"hidden": true,
 						"result": {
-							"duration": 1769804356,
+							"duration": 1748907,
 							"status": "passed"
 						},
 						"match": {}
