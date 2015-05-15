@@ -3,11 +3,12 @@
 var should      = require('chai').should(),
     service     = require("../../service/service");
 
+
 module.exports = function offer_details_steps() {
 
     var offerId         = 'fc677430-a3ed-0132-9d21-7a163e74bed5',
         merchantName    = 'DisneyStore.com',
-        offerTitle      = 'Free shipping on $754+';
+        offerTitle      = 'Free shipping on $75+';
 
     this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
 
@@ -35,21 +36,32 @@ module.exports = function offer_details_steps() {
             .then(assertOfferTitle)
             .then(done);
 
-        function assertMerchantName(name) {
-            name.should.equal(merchantName);
-        }
-
-        function assertOfferTitle(title) {
-            title.should.equal(offerTitle);
-        }
     });
 
-    this.Then(/^I look for offer tile$/, function(callback) {
-        callback.pending();
+    this.Then(/^I look for offer tile$/, function(done) {
+
+        this.offerTile = this.allOffersPage
+                             .searchOfferTile(offerId);
+        done();
     });
 
-    this.Then(/^I see offer information on tile$/, function(callback) {
-        callback.pending();
+    this.Then(/^I see offer information on tile$/, function(done) {
+
+        this.offerTile
+            .then(service.getMerchantName)
+            .then(assertMerchantName);
+
+        this.offerTile
+            .then(service.getOfferTitle)
+            .then(assertOfferTitle)
+            .then(done);
     });
 
+    function assertMerchantName(name) {
+        name.should.equal(merchantName);
+    }
+
+    function assertOfferTitle(title) {
+        title.should.equal(offerTitle);
+    }
 };

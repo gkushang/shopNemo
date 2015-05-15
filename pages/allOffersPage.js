@@ -3,6 +3,8 @@
  */
 
 var offerModal = require('./offerModal');
+var offerTile = require('./offerTile');
+
 module.exports = function allOffersPage(nemo) {
 
     nemo.view.allOffersPage.allOffersTextWaitVisible();
@@ -18,7 +20,14 @@ module.exports = function allOffersPage(nemo) {
         });
     };
 
+    var searchOfferTile = function (id) {
+        return _findOffer(id).then(function () {
+            return offerTile(id,nemo);
+        });
+    };
+
     return {
-        seeOfferModal: seeOfferModal
+        seeOfferModal: seeOfferModal,
+        searchOfferTile: searchOfferTile
     }
 };
