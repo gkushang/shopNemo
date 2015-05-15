@@ -1,5 +1,7 @@
 'use strict';
 
+var should = require('chai').should();
+
 module.exports = function offer_details_steps() {
 
     this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
@@ -30,7 +32,7 @@ module.exports = function offer_details_steps() {
         }
 
         function assertMerchantName(name) {
-            console.log("Merchant Name: ", name);
+            name.should.equal('abc');
             done();
         }
     });
