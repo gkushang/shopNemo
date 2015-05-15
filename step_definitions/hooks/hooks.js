@@ -1,3 +1,6 @@
+'use strict';
+
+var navigate = require('../../pages/navigate');
 
 var myHooks = function () {
 
@@ -26,6 +29,8 @@ var myHooks = function () {
     this.Before(function (scenario, next) {
 
         console.log('Running Scenario: ' + scenario.getName());
+
+        this.homePage = navigate(this.nemo).toHome();
 
         if(this.sauce !== undefined) {
             this.nemo.saucelabs.updateJob({

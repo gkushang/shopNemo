@@ -25,3 +25,8 @@ e.g. below command will run two tests
 ```javascript
 $ NODE_ENV=prod grunt acceptance --tags=@affiliate_details_tile,@affiliate_details_modal
 ```
+
+#### debug tests
+```javascript
+$ NODE_ENV=prod DEBUG=nemo* grunt acceptance
+```

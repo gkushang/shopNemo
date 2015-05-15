@@ -1,12 +1,8 @@
 'use strict';
 
-var navigate = require('../../pages/navigate');
-
 module.exports = function offer_details_steps() {
 
     this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
-
-        this.homePage = navigate(this.nemo).toHome();
 
         this.allOffersPage = this.homePage.goToOffersPage();
 
