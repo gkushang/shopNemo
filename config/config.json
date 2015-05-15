@@ -4,9 +4,11 @@
       "module": "nemo-view",
       "arguments": ["path:locator"]
     },
+
     "saucelabs": {
       "module": "nemo-saucelabs"
     }
+
   },
 
   "driver": {
