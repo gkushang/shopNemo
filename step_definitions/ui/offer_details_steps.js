@@ -1,12 +1,13 @@
 'use strict';
 
-var should = require('chai').should();
+var should      = require('chai').should(),
+    service     = require("../../service/service");
 
 module.exports = function offer_details_steps() {
 
     var offerId         = 'fc677430-a3ed-0132-9d21-7a163e74bed5',
         merchantName    = 'DisneyStore.com',
-        offerTitle      = 'Free shipping on $75+';
+        offerTitle      = 'Free shipping on $754+';
 
     this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
 
@@ -26,25 +27,16 @@ module.exports = function offer_details_steps() {
     this.Then(/^I am presented with the offer modal$/, function(done) {
 
         this.offerModal
-            .then(getMerchantName)
+            .then(service.getMerchantName)
             .then(assertMerchantName);
 
         this.offerModal
-            .then(getOfferTitle)
+            .then(service.getOfferTitle)
             .then(assertOfferTitle)
             .then(done);
 
-
-        function getMerchantName(modal) {
-            return modal.getMerchantName();
-        }
-
         function assertMerchantName(name) {
             name.should.equal(merchantName);
-        }
-
-        function getOfferTitle(modal) {
-            return modal.getOfferTitle();
         }
 
         function assertOfferTitle(title) {
