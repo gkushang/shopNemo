@@ -6,17 +6,22 @@
 #### run tests locally
 To run all the acceptance tests locally,
 ```javascript
-$ NODE_ENV=qa grunt acceptance
+$ NODE_ENV=prod grunt acceptance
 ```
 #### run tests on sauce labs
-Pass a `SAUCE` parameter with the browser name. `shopNemo` is configured to run test on sauce labs Firefox and Chrome browser.
-To run all the acceptance tests on Sauce Labs,
+Pass a `SAUCE` parameter with the browser name. `shopNemo` is configured to run test on sauce labs Firefox and Chrome browser, more browsers will be added soon.
 ```javascript
-$ NODE_ENV=qa SAUCE=firefox grunt acceptance
+$ NODE_ENV=prod SAUCE=firefox grunt acceptance
 ```
 
 #### to run particular tags
 e.g. below command will run two tests
 ```javascript
-$ NODE_ENV=qa grunt acceptance --tags=@affiliate_details_tile,@affiliate_details_modal
+$ NODE_ENV=prod grunt acceptance --tags=@affiliate_details_tile,@affiliate_details_modal
+```
+
+#### to run smoke test
+smoke test runs all the cucumber tests tagged with @p1
+```javascript
+$ NODE_ENV=prod grunt smoke
 ```

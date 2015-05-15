@@ -5,7 +5,7 @@ Feature: Offers Details
   So that I can see them in PayPal Shop
 
 
-  @affiliate_details_tile
+  @p1 @affiliate_details_tile
   Scenario: Offer Details on tile should match with Affiliate Offer
 
     Given an Affiliate Offer is in Shop

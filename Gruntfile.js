@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         configDir: require('path').resolve('tasks')
     });
 
-    grunt.registerTask('p1',['cucumberjs:p1']);
+    grunt.registerTask('smoke',['cucumberjs:smoke']);
     grunt.registerTask('acceptance',['cucumberjs:all']);
 };
 

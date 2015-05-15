@@ -17,7 +17,7 @@ module.exports = function cucumberjs(grunt) {
                 require: grunt.option('require', 'step_definitions/')
             }
         },
-        'p1': {
+        'smoke': {
             options: {
                 format: 'html',
                 output: 'report/smoke_cucumber_report.html',
