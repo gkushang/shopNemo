@@ -11,3 +11,11 @@ Feature: Offers Details
     Given an Affiliate Offer is in Shop
     When I ask for offer details
     Then I am presented with the offer modal
+
+
+  @affiliate_details_modal
+  Scenario: Offer Details on tile should match with Affiliate Offer
+
+    Given an Affiliate Offer is in Shop
+    When I ask for offer details
+    Then I am presented with the offer modal

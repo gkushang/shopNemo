@@ -25,7 +25,7 @@
 						"keyword": "Before ",
 						"hidden": true,
 						"result": {
-							"duration": 11775755195,
+							"duration": 14334633208,
 							"status": "passed"
 						},
 						"match": {}
@@ -35,7 +35,7 @@
 						"line": 11,
 						"keyword": "Given ",
 						"result": {
-							"duration": 17395497,
+							"duration": 17500682,
 							"status": "passed"
 						},
 						"match": {}
@@ -45,7 +45,7 @@
 						"line": 12,
 						"keyword": "When ",
 						"result": {
-							"duration": 3655365,
+							"duration": 4048817,
 							"status": "passed"
 						},
 						"match": {}
@@ -55,7 +55,7 @@
 						"line": 13,
 						"keyword": "Then ",
 						"result": {
-							"duration": 12563951867,
+							"duration": 13589079763,
 							"status": "passed"
 						},
 						"match": {}
@@ -64,7 +64,75 @@
 						"keyword": "After ",
 						"hidden": true,
 						"result": {
-							"duration": 456079655,
+							"duration": 464360800,
+							"status": "passed"
+						},
+						"match": {}
+					}
+				],
+				"passed": 5,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 0
+			},
+			{
+				"name": "Offer Details on tile should match with Affiliate Offer",
+				"id": "Offers-Details;offer-details-on-tile-should-match-with-affiliate-offer",
+				"line": 17,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@affiliate_details_modal",
+						"line": 16
+					}
+				],
+				"steps": [
+					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 8991027225,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "an Affiliate Offer is in Shop",
+						"line": 19,
+						"keyword": "Given ",
+						"result": {
+							"duration": 10037124,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "I ask for offer details",
+						"line": 20,
+						"keyword": "When ",
+						"result": {
+							"duration": 2306972,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "I am presented with the offer modal",
+						"line": 21,
+						"keyword": "Then ",
+						"result": {
+							"duration": 10866633244,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 432611442,
 							"status": "passed"
 						},
 						"match": {}
@@ -76,7 +144,7 @@
 				"skipped": 0
 			}
 		],
-		"passed": 1,
+		"passed": 2,
 		"failed": 0,
 		"relativeFolder": ""
 	}
