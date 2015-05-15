@@ -74,8 +74,8 @@
           <a class="navbar-brand" href="#">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">shopNemo</div>
           <div class="label-container">
-            <span class="label label-success">Passed: 1</span>
-            <span class="label label-danger">Failed: 0</span>
+            <span class="label label-success">Passed: 0</span>
+            <span class="label label-danger">Failed: 1</span>
           </div>
         </div>
       </div>
@@ -101,8 +101,7 @@
               <pre>
 running tests on prod environment
 Running Scenario: Offer Details on tile should match with Affiliate Offer
-Merchant Name:  DisneyStore.com
-Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.com/tests/1718fc1d83a6411298d07d27d8e7c566
+Test ran locally
               </pre>
             </div>
           </div>
@@ -122,8 +121,8 @@ Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.c
             <i class="glyphicon glyphicon-chevron-down"></i>
             <b>Feature:</b>Offers Details
             <span class="label-container">
-              <span class="label label-success">1</span>
               
+              <span class="label label-danger">1</span>
             </span>
           </a>
         </h4>
@@ -139,10 +138,10 @@ Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.c
                     <i class="glyphicon glyphicon-chevron-down"></i>
                     <b>Scenario:</b>Offer Details on tile should match with Affiliate Offer
                     <span class="label-container">
-                      <span class="label label-success" title="Passed">5</span>
+                      <span class="label label-success" title="Passed">4</span>
                       
                       
-                      
+                      <span class="label label-danger" title="Failed">1</span>
                     </span>
                   </a>
                 </h4>
@@ -204,13 +203,35 @@ Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.c
                     <p class="scenario-container">
                     
                       
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                        <span class="label label-danger" title="Failed"><i class="glyphicon glyphicon-remove"></i></span>
                       
                     
                       <span class="text"><span class="keyword highlight">Then </span> I am presented with the offer modal</span>
                     
                       
 
+                      
+                        <a href="#error003" data-toggle="collapse">+ Show Error</a> 
+                        <div id="error003" class="collapse">
+                          AssertionError: expected 'Free shipping on $75+' to equal 'Free shipping on $76+'
+  at assertOfferTitle (/Users/kugajjar/Documents/workspace/shopNemo/step_definitions/ui/offer_details_steps.js:51:26)
+  at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/goog/base.js:1582:15
+  at [object Object].webdriver.promise.ControlFlow.runInNewFrame_ (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1654:20)
+  at notify (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:465:12)
+  at notifyAll (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:442:7)
+  at resolve (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:420:7)
+  at fulfill (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:535:5)
+  at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/goog/base.js:1582:15
+  at [object Object].webdriver.promise.ControlFlow.runInNewFrame_ (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1654:20)
+  at notify (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:465:12)
+  at [object Object].then (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:522:7)
+  at Object.webdriver.promise.asap (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:767:11)
+  at newFrame.onComplete (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1670:25)
+  at [object Object].webdriver.promise.Frame_.notify_ (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1914:5)
+  at [object Object]._onTimeout (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1901:11)
+  at Timer.listOnTimeout (timers.js:110:15)
+
+                        </div>
                       
 
                        

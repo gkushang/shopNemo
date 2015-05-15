@@ -2,5 +2,10 @@
   "merchantName": {
     "type": "css",
     "locator": ".offerDetails>.offerInformation>.merchantName.ng-binding"
+  },
+
+  "offerTitle": {
+    "type": "css",
+    "locator": ".offerDetails>.offerInformation>div>.offerTitle.ng-binding"
   }
 }

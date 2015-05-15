@@ -11,7 +11,13 @@ module.exports = function offerModal(nemo){
         return nemo.view.offerModal.merchantName().getText();
     };
 
+    var getOfferTitle = function () {
+
+        return nemo.view.offerModal.offerTitle().getText();
+    };
+
     return {
-        getMerchantName: getMerchantName
+        getMerchantName: getMerchantName,
+        getOfferTitle: getOfferTitle
     }
 };
