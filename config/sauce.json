@@ -1,0 +1,26 @@
+{
+  "chrome": {
+    "driver": {
+      "browser": "chrome",
+      "local": false,
+
+      "serverCaps": {
+        "platform": "MAC",
+        "version": "27.0"
+      }
+    }
+  },
+
+  "firefox": {
+    "driver": {
+      "browser": "firefox",
+      "local": false,
+
+      "serverCaps": {
+        "idle-timeout": 300,
+        "platform": "Windows 8",
+        "version": "29"
+      }
+    }
+  }
+}

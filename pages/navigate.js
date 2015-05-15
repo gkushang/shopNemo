@@ -1,16 +1,16 @@
 'use strict';
 
+var homePage = require('./homePage');
 
-var HomePage = require('./homePage');
+module.exports = function navigate(nemo) {
 
-function Navigate(nemo) {
-    this.nemo = nemo;
-}
+    var toHome = function () {
 
-Navigate.prototype.toHome = function () {
+        nemo.driver.get(nemo._config.get('data').baseUrl);
+        return homePage(nemo);
+    };
 
-    this.nemo.driver.get(this.nemo._config.get('data').baseUrl);
-    return new HomePage(this.nemo);
+    return {
+        toHome: toHome
+    }
 };
-
-module.exports = Navigate;

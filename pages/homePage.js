@@ -1,15 +1,21 @@
 'use strict';
 
-var loadOffersPage = require('./allOffersPage');
+var allOffersPage = require('./allOffersPage');
 
-function HomePage(nemo) {
-    this.nemo = nemo;
-    this.nemo.view.homePage.offersTabWaitVisible();
-}
+module.exports = function homePage(nemo) {
 
-HomePage.prototype.goToOffersPage = function () {
-    this.nemo.view.homePage.offersTab().click();
-    return loadOffersPage(this.nemo);
+    var homePageView = nemo.view.homePage;
+
+    homePageView.offersTabWaitVisible();
+
+    var goToOffersPage = function () {
+
+        homePageView.offersTab().click();
+        return allOffersPage(nemo);
+    };
+
+    return {
+        goToOffersPage: goToOffersPage
+    }
 };
 
-module.exports = HomePage;

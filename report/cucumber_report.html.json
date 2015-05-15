@@ -22,11 +22,20 @@
 				],
 				"steps": [
 					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 6742737710,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
 						"name": "an Affiliate Offer is in Shop",
 						"line": 11,
 						"keyword": "Given ",
 						"result": {
-							"duration": 16035852,
+							"duration": 17397965,
 							"status": "passed"
 						},
 						"match": {}
@@ -36,7 +45,7 @@
 						"line": 12,
 						"keyword": "When ",
 						"result": {
-							"duration": 6415105681,
+							"duration": 3985191,
 							"status": "passed"
 						},
 						"match": {}
@@ -46,15 +55,25 @@
 						"line": 13,
 						"keyword": "Then ",
 						"result": {
-							"status": "pending"
+							"duration": 11619420227,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 1769804356,
+							"status": "passed"
 						},
 						"match": {}
 					}
 				],
-				"passed": 2,
+				"passed": 5,
 				"failed": 0,
 				"notdefined": 0,
-				"skipped": 1
+				"skipped": 0
 			}
 		],
 		"passed": 1,
