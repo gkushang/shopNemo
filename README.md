@@ -1,6 +1,6 @@
 ### Shop Acceptance tests
 ```javascript
-1. npm install --registry http://npm.paypal.com
+$ npm install --registry http://npm.paypal.com
 ```
 
 #### run Acceptance tests locally
