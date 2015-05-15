@@ -4,7 +4,6 @@
 ```
 
 #### run Acceptance tests locally
-To run all the acceptance tests locally,
 ```javascript
 $ NODE_ENV=prod grunt acceptance
 ```
