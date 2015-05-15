@@ -1,7 +1,7 @@
 'use strict';
 
 var should      = require('chai').should(),
-    service     = require("../../service/service");
+    page     = require("../../service/pageService");
 
 
 module.exports = function offer_details_steps() {
@@ -28,17 +28,17 @@ module.exports = function offer_details_steps() {
     this.Then(/^I am presented with the offer modal$/, function(done) {
 
         this.offerModal
-            .then(service.getMerchantName)
+            .then(page.getMerchantName)
             .then(assertMerchantName);
 
         this.offerModal
-            .then(service.getOfferTitle)
+            .then(page.getOfferTitle)
             .then(assertOfferTitle)
             .then(done);
 
     });
 
-    this.Then(/^I look for offer tile$/, function(done) {
+    this.Then(/^I look for offer tile$/, function(done)     {
 
         this.offerTile = this.allOffersPage
                              .searchOfferTile(offerId);
@@ -48,11 +48,11 @@ module.exports = function offer_details_steps() {
     this.Then(/^I see offer information on tile$/, function(done) {
 
         this.offerTile
-            .then(service.getMerchantName)
+            .then(page.getMerchantName)
             .then(assertMerchantName);
 
         this.offerTile
-            .then(service.getOfferTitle)
+            .then(page.getOfferTitle)
             .then(assertOfferTitle)
             .then(done);
     });
