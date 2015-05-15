@@ -9,8 +9,8 @@ Feature: Offers Details
   Scenario: Offer Details on tile should match with Affiliate Offer
 
     Given an Affiliate Offer is in Shop
-    When I ask for offer details
-    Then I am presented with the offer modal
+    When I look for offer tile
+    Then I see offer information on tile
 
 
   @p1 @affiliate_details_modal

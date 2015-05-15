@@ -101,12 +101,7 @@
               <pre>
 running tests on prod environment
 Running Scenario: Offer Details on tile should match with Affiliate Offer
-Merchant Name:  DisneyStore.com
-Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.com/tests/fe96c712903649acbbe21f2a1b7dca5c
-running tests on prod environment
-Running Scenario: Offer Details on tile should match with Affiliate Offer
-Merchant Name:  DisneyStore.com
-Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.com/tests/b5edd3aa88c54cb5993d8da2e88e191b
+Test ran locally
               </pre>
             </div>
           </div>
@@ -126,7 +121,7 @@ Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.c
             <i class="glyphicon glyphicon-chevron-down"></i>
             <b>Feature:</b>Offers Details
             <span class="label-container">
-              <span class="label label-success">2</span>
+              <span class="label label-success">1</span>
               
             </span>
           </a>
@@ -143,8 +138,8 @@ Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.c
                     <i class="glyphicon glyphicon-chevron-down"></i>
                     <b>Scenario:</b>Offer Details on tile should match with Affiliate Offer
                     <span class="label-container">
-                      <span class="label label-success" title="Passed">5</span>
-                      
+                      <span class="label label-success" title="Passed">3</span>
+                      <span class="label label-info" title="Undefined">2</span>
                       
                       
                     </span>
@@ -191,11 +186,17 @@ Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.c
                     <p class="scenario-container">
                     
                       
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                        <span class="label label-primary" title="Undefined"><i class="glyphicon glyphicon-flash"></i></span>
                       
                     
-                      <span class="text"><span class="keyword highlight">When </span> I ask for offer details</span>
+                      <span class="text"><span class="keyword highlight">When </span> I look for offer tile</span>
                     
+                      
+                        <pre>
+this.Then(/^I look for offer tile$/, function(callback) {
+  callback.pending();
+});
+                        </pre>
                       
 
                       
@@ -208,119 +209,17 @@ Test ran on sauce labs firefox browser, here is the job url: https://saucelabs.c
                     <p class="scenario-container">
                     
                       
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                        <span class="label label-primary" title="Undefined"><i class="glyphicon glyphicon-flash"></i></span>
                       
                     
-                      <span class="text"><span class="keyword highlight">Then </span> I am presented with the offer modal</span>
+                      <span class="text"><span class="keyword highlight">Then </span> I see offer information on tile</span>
                     
                       
-
-                      
-
-                       
-
-                    
-                    </p>              
-                   
-                    <p class="scenario-container">
-                    
-                      
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                      
-                    
-                      <span class="text"><span class="keyword highlight">After </span> </span>
-                    
-                      
-
-                      
-
-                       
-
-                    
-                    </p>              
-                  
-                </div>
-              </div>
-            </div>
-           
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapseScenario01">
-                    <i class="glyphicon glyphicon-chevron-right"></i>
-                    <i class="glyphicon glyphicon-chevron-down"></i>
-                    <b>Scenario:</b>Offer Details on tile should match with Affiliate Offer
-                    <span class="label-container">
-                      <span class="label label-success" title="Passed">5</span>
-                      
-                      
-                      
-                    </span>
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseScenario01" class="panel-collapse collapse">
-                <div class="panel-body">
-                   
-                    <p class="scenario-container">
-                    
-                      
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                      
-                    
-                      <span class="text"><span class="keyword highlight">Before </span> </span>
-                    
-                      
-
-                      
-
-                       
-
-                    
-                    </p>              
-                   
-                    <p class="scenario-container">
-                    
-                      
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                      
-                    
-                      <span class="text"><span class="keyword highlight">Given </span> an Affiliate Offer is in Shop</span>
-                    
-                      
-
-                      
-
-                       
-
-                    
-                    </p>              
-                   
-                    <p class="scenario-container">
-                    
-                      
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                      
-                    
-                      <span class="text"><span class="keyword highlight">When </span> I ask for offer details</span>
-                    
-                      
-
-                      
-
-                       
-
-                    
-                    </p>              
-                   
-                    <p class="scenario-container">
-                    
-                      
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                      
-                    
-                      <span class="text"><span class="keyword highlight">Then </span> I am presented with the offer modal</span>
-                    
+                        <pre>
+this.Then(/^I see offer information on tile$/, function(callback) {
+  callback.pending();
+});
+                        </pre>
                       
 
                       

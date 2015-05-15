@@ -20,7 +20,7 @@ module.exports = function cucumberjs(grunt) {
         'smoke': {
             options: {
                 format: 'html',
-                output: 'report/smoke_cucumber_report.html',
+                output: 'report/cucumber_report.html',
                 theme: 'bootstrap',
                 tags: grunt.option('tags') || '@p1',
                 saveJson: true,

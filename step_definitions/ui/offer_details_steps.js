@@ -44,4 +44,12 @@ module.exports = function offer_details_steps() {
         }
     });
 
+    this.Then(/^I look for offer tile$/, function(callback) {
+        callback.pending();
+    });
+
+    this.Then(/^I see offer information on tile$/, function(callback) {
+        callback.pending();
+    });
+
 };
