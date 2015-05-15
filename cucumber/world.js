@@ -11,7 +11,7 @@ var WorldConstructor = function WorldConstructor(callback) {
         self.driver = nemo.driver;
         self.config = nemo._config;
         self.nemo = nemo;
-        self.isSauce = process.env.SAUCE;
+        self.sauce = process.env.SAUCE;
         callback();
     });
 

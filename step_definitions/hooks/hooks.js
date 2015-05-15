@@ -7,10 +7,12 @@ var myHooks = function () {
 
         var driver = this.driver;
 
-        if(this.isSauce !== undefined) {
+        if(this.sauce !== undefined) {
             this.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
+            console.log('Test ran on sauce labs ' + this.sauce + ' browser, here is the job url: ' + this.nemo.saucelabs.getJobUrl());
 
         }else {
+            console.log('Test ran locally');
             quitDriver();
         }
 
@@ -25,7 +27,7 @@ var myHooks = function () {
 
         console.log('Running Scenario: ' + scenario.getName());
 
-        if(this.isSauce !== undefined) {
+        if(this.sauce !== undefined) {
             this.nemo.saucelabs.updateJob({
                 name: scenario.getName(),
                 cucumber_tags: scenario.getTags()
