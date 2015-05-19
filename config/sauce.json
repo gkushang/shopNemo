@@ -17,7 +17,6 @@
       "local": false,
 
       "serverCaps": {
-        "idle-timeout": 300,
         "platform": "Windows 8",
         "version": "29"
       }
