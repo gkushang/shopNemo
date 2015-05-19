@@ -1,12 +1,12 @@
 'use strict';
 
-var navigate = require('../../pages/navigate');
+var navigate    = require('../../pages/navigate');
 
 var myHooks = function () {
 
     this.World = require("../../cucumber/world").World;
 
-    this.After(function(scenario, callback) {
+    this.After(function(scenario, done) {
 
         var driver = this.driver;
 
@@ -16,12 +16,20 @@ var myHooks = function () {
 
         }else {
             console.log('Test ran locally');
-            quitDriver();
+            takeScreenShot().then(quitDriver);
+        }
+
+        function takeScreenShot() {
+            if(scenario.isFailed()) {
+                return driver.takeScreenshot().then(function (buffer) {
+                    return scenario.attach(new Buffer(buffer, 'base64').toString('binary'), 'image/png');
+                });
+            }
         }
 
         function quitDriver() {
-            driver.quit();
-            callback();
+                driver.quit();
+                done();
         }
 
     });

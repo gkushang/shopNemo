@@ -6,7 +6,7 @@ var should      = require('chai').should(),
 
 module.exports = function offer_details_steps() {
 
-    var offerId         = 'fc677430-a3ed-0132-9d21-7a163e74bed5',
+    var offerId         = '83adb8a0-da15-0132-04c4-7a163e457d39',
         merchantName    = 'DisneyStore.com',
         offerTitle      = 'Free shipping on $75+';
 
