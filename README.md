@@ -16,8 +16,15 @@ $ NODE_ENV=prod grunt smoke
 
 #### run tests on sauce labs
 Pass a `SAUCE` parameter with the browser name. `shopNemo` is configured to run test on sauce labs Firefox and Chrome browser, more browsers will be added soon.
+
+to run test on sauce labs Firefox browser
 ```javascript
 $ NODE_ENV=prod SAUCE=firefox grunt acceptance
+```
+
+to run test on sauce labs Chrome browser
+```javascript
+$ NODE_ENV=prod SAUCE=chrome grunt acceptance
 ```
 
 #### run specific cucumber tags

@@ -15,11 +15,11 @@
     "cucumber": "0.4.7",
     "grunt": "^0.4.5",
     "grunt-config-dir": "^0.3.2",
-    "grunt-cucumberjs": "^0.5.2",
+    "grunt-cucumberjs": "^0.7.0",
     "grunt-debug-task": "^0.1.5",
     "nconf": "^0.7.1",
     "nemo": "^1.0.5",
-    "nemo-saucelabs": "^1.0.1",
+    "nemo-saucelabs": "^1.0.5",
     "nemo-view": "^1.0.0",
     "q": "^1.0.0",
     "underscore": "^1.7.0"
