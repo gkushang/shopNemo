@@ -1,5 +1,5 @@
 var Nemo            = require('nemo');
-var Configuration   = require('./configuration');
+var Configuration   = require('./../config/configuration');
 
 var WorldConstructor = function WorldConstructor(callback) {
 
