@@ -34,7 +34,9 @@ var WorldConstructor = function WorldConstructor(callback) {
             i: config.driver.serverCaps['tunnel-identifier']
         };
 
-        console.log('launching sauce connect to run your test...');
+
+        console.log('please wait...');
+        console.log('launching sauce connect to run your test:', JSON.stringify(options));
 
         sauceConnectLauncher(options, function (err, sauceConnectProcess) {
             if (err) {
