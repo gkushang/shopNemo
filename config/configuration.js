@@ -1,7 +1,7 @@
 
 "use strict";
 
-var sauceConfig        = require('../config/sauce.json');
+var sauceConfig        = require('sauce.json');
 var _                  = require('underscore');
 
 function Configuration() {
