@@ -9,10 +9,15 @@ var myHooks = function () {
     this.After(function(scenario, done) {
 
         var driver = this.driver;
+        var self = this;
 
         if(this.sauce !== undefined) {
-            this.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
-            console.log('Test ran on sauce labs ' + this.sauce + ' browser, here is the job url: ' + this.nemo.saucelabs.getJobUrl());
+
+            self.sauceTunnel.close(function() {
+
+                self.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
+                console.log('Test ran on sauce labs ' + self.sauce + ' browser, here is the job url: ' +
+                    self.nemo.saucelabs.getJobUrl())});
 
         }else {
             console.log('Test ran locally');
@@ -28,8 +33,8 @@ var myHooks = function () {
         }
 
         function quitDriver() {
-                driver.quit();
-                done();
+            driver.quit();
+            done();
         }
 
     });

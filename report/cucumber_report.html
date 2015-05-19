@@ -74,8 +74,8 @@
           <a class="navbar-brand" href="#">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">shopNemo</div>
           <div class="label-container">
-            <span class="label label-success">Passed: 1</span>
-            <span class="label label-danger">Failed: 0</span>
+            <span class="label label-success">Passed: 0</span>
+            <span class="label label-danger">Failed: 1</span>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
           <div id="logOutput" class="panel-collapse collapse">
             <div class="panel-body">
               <pre>
-running tests on prod environment
+running tests on qa environment
 Running Scenario: Offer Details on tile should match with Affiliate Offer
 Test ran locally
               </pre>
@@ -121,8 +121,8 @@ Test ran locally
             <i class="glyphicon glyphicon-chevron-down"></i>
             <b>Feature:</b>Offers Details
             <span class="label-container">
-              <span class="label label-success">1</span>
               
+              <span class="label label-danger">1</span>
             </span>
           </a>
         </h4>
@@ -138,10 +138,10 @@ Test ran locally
                     <i class="glyphicon glyphicon-chevron-down"></i>
                     <b>Scenario:</b>Offer Details on tile should match with Affiliate Offer
                     <span class="label-container">
-                      <span class="label label-success" title="Passed">5</span>
+                      <span class="label label-success" title="Passed">4</span>
                       
                       
-                      
+                      <span class="label label-danger" title="Failed">1</span>
                     </span>
                   </a>
                 </h4>
@@ -189,7 +189,7 @@ Test ran locally
                         <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
                       
                     
-                      <span class="text"><span class="keyword highlight">When </span> I look for offer tile</span>
+                      <span class="text"><span class="keyword highlight">When </span> I ask for offer details</span>
                     
                       
 
@@ -203,13 +203,126 @@ Test ran locally
                     <p class="scenario-container">
                     
                       
-                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                        <span class="label label-danger" title="Failed"><i class="glyphicon glyphicon-remove"></i></span>
                       
                     
-                      <span class="text"><span class="keyword highlight">Then </span> I see offer information on tile</span>
+                      <span class="text"><span class="keyword highlight">Then </span> I am presented with the offer modal</span>
                     
                       
 
+                      
+                        <a href="#error003" data-toggle="collapse">+ Show Error</a> 
+                        <div id="error003" class="collapse">
+                          Error: [drivex.waitForElementVisible] Element not visible
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo-view/node_modules/selenium-drivex/index.js:94:15
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/goog/base.js:1582:15
+    at [object Object].webdriver.promise.ControlFlow.runInNewFrame_ (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1654:20)
+    at notify (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:465:12)
+    at notifyAll (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:442:7)
+    at resolve (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:420:7)
+    at Object.reject (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:545:5)
+    at notify (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:468:16)
+    at notifyAll (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:442:7)
+    at resolve (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:420:7)
+    at [object Object].reject (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:545:5)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1529:10
+    at newFrame.onAbort (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1679:7)
+    at [object Object].webdriver.promise.Frame_.notify_ (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1914:5)
+    at [object Object]._onTimeout (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1887:13)
+    at Timer.listOnTimeout (timers.js:110:15)
+==== async task ====
+    at [object Object].webdriver.promise.ControlFlow.wait (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/promise.js:1410:15)
+    at [object Object].webdriver.WebDriver.wait (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:646:21)
+    at Object.methods.waitForElementVisible (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo-view/node_modules/selenium-drivex/index.js:82:21)
+    at waitVisibleReturnElement (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo-view/node_modules/selenium-drivex/index.js:106:24)
+    at Object.methods.waitForElementVisiblePromise (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo-view/node_modules/selenium-drivex/index.js:109:50)
+    at Object.locatorObject.(anonymous function) [as allOffersTextWaitVisible] (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/nemo-view/lib/locreator.js:67:19)
+    at allOffersPage (/Users/kugajjar/Documents/workspace/shopNemo/pages/allOffersPage.js:10:29)
+    at Object.goToOffersPage (/Users/kugajjar/Documents/workspace/shopNemo/pages/homePage.js:14:16)
+    at WorldConstructor.<anonymous> (/Users/kugajjar/Documents/workspace/shopNemo/step_definitions/ui/offer_details_steps.js:15:44)
+    at Object.invoke (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/support_code/step_definition.js:88:14)
+    at Object.execute (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/step.js:175:22)
+    at Object.acceptVisitor (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/step.js:161:12)
+    at Object.executeStep (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:290:12)
+    at Object.processStep (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:285:14)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:127:16
+    at callUserFunctionAndBroadcastAfterEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:151:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at broadcastToListeners (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
+    at onRuntimeListenersComplete (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:174:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
+    at Object.hear (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/listener.js:8:9)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:179:51
+    at processItem (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at broadcastToListeners (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
+    at Object.broadcastEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:170:7)
+    at Object.broadcastBeforeEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:161:12)
+    at Object.broadcastEventAroundUserFunction (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:145:12)
+    at Object.visitStep (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:124:12)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/scenario.js:98:17
+    at processItem (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at Object.instructVisitorToVisitSteps (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/scenario.js:97:13)
+    at Object.instructVisitorToVisitScenarioSteps (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/scenario.js:93:12)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/scenario.js:78:14
+    at Object.instructVisitorToVisitBackgroundSteps (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/scenario.js:88:9)
+    at Object.acceptVisitor (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/scenario.js:77:12)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:67:24
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at broadcastToListeners (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
+    at onRuntimeListenersComplete (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:174:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
+    at handleStepResultEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/listener/json_formatter.js:166:5)
+    at Object.hear (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/listener.js:6:9)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:179:51
+    at processItem (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at broadcastToListeners (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
+    at Object.broadcastEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:170:7)
+    at Object.visitStepResult (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:140:12)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/step.js:162:17
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/support_code/step_definition.js:63:11
+    at WorldConstructor.<anonymous> (/Users/kugajjar/Documents/workspace/shopNemo/step_definitions/hooks/hooks.js:55:13)
+    at Object.invoke (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/support_code/step_definition.js:88:14)
+    at Object.execute (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/step.js:175:22)
+    at Object.acceptVisitor (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/ast/step.js:161:12)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:110:20
+    at processItem (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at Object.visitBeforeSteps (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:109:19)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:66:18
+    at callUserFunctionAndBroadcastAfterEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:151:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at broadcastToListeners (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
+    at onRuntimeListenersComplete (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:174:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
+    at handleBeforeScenarioEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/listener/json_formatter.js:116:5)
+    at Object.hear (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/listener.js:6:9)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:179:51
+    at processItem (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
+    at iterate (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
+    at Object.forEach (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
+    at broadcastToListeners (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
+    at Object.broadcastEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:170:7)
+    at Object.broadcastBeforeEvent (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:161:12)
+    at Object.broadcastEventAroundUserFunction (/Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:145:12)
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:63:14
+    at /Users/kugajjar/Documents/workspace/shopNemo/node_modules/cucumber/lib/cucumber/support_code/library.js:93:11
+    at process._tickDomainCallback (node.js:381:11)
+                        </div>
                       
 
                        
@@ -229,6 +342,11 @@ Test ran locally
 
                       
 
+                       
+                                                <a class="toggle" href="#">Screenshot -</a>
+                                                <a class="screenshot" href="screenshot/After8611.png">
+                                                 <img class="screenshot" style="height:100%;width:100%" id="my_images" src="screenshot/After8611.png"/>
+                                                 </a>
                        
 
                     
@@ -250,9 +368,9 @@ Test ran locally
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
     <script>
       $(document).ready(function() {
   $('.collapse').on('hide.bs.collapse', function (e) {
