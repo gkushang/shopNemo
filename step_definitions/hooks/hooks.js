@@ -21,7 +21,9 @@ var myHooks = function () {
             console.log('Test ran on sauce labs ' + process.env['SAUCE'] + ' browser, here is the job url: ' +
                 this.nemo.saucelabs.getJobUrl());
 
-            this.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
+            this.nemo.saucelabs.isJobPassed(!scenario.isFailed(), function(){});
+
+            quitDriver();
 
         } else {
             console.log('Test ran locally');
