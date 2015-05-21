@@ -9,4 +9,3 @@ module.exports = function (grunt) {
     grunt.registerTask('smoke',['cucumberjs:smoke']);
     grunt.registerTask('acceptance',['cucumberjs:all']);
 };
-

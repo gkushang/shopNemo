@@ -1,61 +1,110 @@
 'use strict';
 
-var navigate    = require('../../pages/navigate');
+var navigate        = require('../../pages/navigate'),
+    sauceConnect     = require('../../sauce_connect/sauceConnect'),
+    Q               = require('q'),
+    Nemo            = require('nemo'),
+    configuration   = require('../../config/configuration');
+
 
 var myHooks = function () {
 
     this.World = require("../../cucumber/world").World;
 
+    var sauceConnectProcess;
+
     this.After(function(scenario, done) {
 
         var driver = this.driver;
-        var self = this;
 
-        if(this.sauce !== undefined) {
+        if(process.env['SAUCE']) {
+            console.log('Test ran on sauce labs ' + process.env['SAUCE'] + ' browser, here is the job url: ' +
+                this.nemo.saucelabs.getJobUrl());
 
-            self.sauceTunnel.close(function() {
+            this.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
 
-                self.nemo.saucelabs.isJobPassed(!scenario.isFailed(), quitDriver);
-                console.log('Test ran on sauce labs ' + self.sauce + ' browser, here is the job url: ' +
-                    self.nemo.saucelabs.getJobUrl())});
-
-        }else {
+        } else {
             console.log('Test ran locally');
-            takeScreenShot().then(quitDriver);
-        }
 
-        function takeScreenShot() {
             if(scenario.isFailed()) {
-                return driver.takeScreenshot().then(function (buffer) {
-                    return scenario.attach(new Buffer(buffer, 'base64').toString('binary'), 'image/png');
-                });
+                takeScreenShot().then(quitDriver);
+            } else {
+                quitDriver();
             }
         }
 
+        function takeScreenShot() {
+            return driver.takeScreenshot().then(function (buffer) {
+                    return scenario.attach(new Buffer(buffer, 'base64').toString('binary'), 'image/png');
+                });
+        }
+
         function quitDriver() {
+            console.log("quit driver");
             driver.quit();
             done();
         }
-
     });
 
     this.Before(function (scenario, next) {
 
-        console.log('Running Scenario: ' + scenario.getName());
+        var self = this;
 
-        this.homePage = navigate(this.nemo).toHome();
+        launchNemo(this).then(function (){
+            console.log('Running Scenario: ' + scenario.getName());
 
-        if(this.sauce !== undefined) {
-            this.nemo.saucelabs.updateJob({
-                name: scenario.getName(),
-                cucumber_tags: scenario.getTags()
-            }, next);
+            self.homePage = navigate(self.nemo).toHome();
 
-        }else {
-            next();
-        }
+            if(process.env['SAUCE']) {
+                self.nemo.saucelabs.updateJob({
+                    name: scenario.getName(),
+                    cucumber_tags: scenario.getTags()
+                }, next);
 
+            } else {
+                next();
+            }
+        });
     });
+
+    this.registerHandler('AfterFeatures', function (event, callback) {
+
+        if(process.env['SAUCE']) {
+             sauceConnectProcess.close(callback);
+        } else {
+            callback();
+        }
+    });
+
+    this.registerHandler('BeforeFeatures', function (event, callback) {
+
+        if(process.env['SAUCE']) {
+            sauceConnect().connect()
+                .then(function sauceConnected(sauceConnect) {
+                    sauceConnectProcess = sauceConnect;
+                    callback();
+                });
+
+        } else {
+            callback();
+        }
+    });
+
+    function launchNemo(self) {
+
+        var deferred = Q.defer();
+
+        var nemo;
+
+        nemo = new Nemo(process.cwd(), configuration().override(), function() {
+            self.driver = nemo.driver;
+            self.config = nemo._config;
+            self.nemo = nemo
+            deferred.resolve();
+        });
+
+        return deferred.promise;
+    }
 };
 
 module.exports = myHooks;

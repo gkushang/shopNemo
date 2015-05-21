@@ -13,6 +13,7 @@ module.exports = function cucumberjs(grunt) {
                 tags: grunt.option('tags'),
                 saveJson: true,
                 debug: true,
+                debugger: grunt.option('cucumber-debug') || false,
                 strict: true,
                 require: grunt.option('require', 'step_definitions/')
             }
@@ -24,7 +25,10 @@ module.exports = function cucumberjs(grunt) {
                 theme: 'bootstrap',
                 tags: grunt.option('tags') || '@p1',
                 saveJson: true,
-                debug: true
+                debug: true,
+                debugger: grunt.option('cucumber-debug') || false,
+                strict: true,
+                require: grunt.option('require', 'step_definitions/')
             }
         }
     };
