@@ -4,18 +4,18 @@ Feature: Offers Details
   I want to create affiliate and CLO offers
   So that I can see them in PayPal Shop
 
-
+  
   @affiliate_details_tile
   Scenario: Offer Details on tile should match with Affiliate Offer
 
     Given an Affiliate Offer is in Shop
-#    When I look for offer tile
-#    Then I see offer information on tile
+    When I look for offer tile
+    Then I see offer information on tile
 
 
   @p1 @affiliate_details_modal
   Scenario: Offer Details on modal should match with Affiliate Offer
 
     Given an Affiliate Offer is in Shop
-#    When I ask for offer details
-#    Then I am presented with the offer modal
+    When I ask for offer details
+    Then I am presented with the offer modal

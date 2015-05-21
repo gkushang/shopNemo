@@ -41,8 +41,8 @@ var myHooks = function () {
 
         function quitDriver() {
             console.log("quit driver");
-            driver.quit();
-            done();
+            driver.quit().then(done);
+            //done();
         }
     });
 

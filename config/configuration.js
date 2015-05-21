@@ -17,7 +17,7 @@ module.exports = function configuration() {
             throw new Error('NODE_ENV must be defined');
         }
 
-        if (sauce !== undefined) {
+        if (sauce) {
 
             if (sauceConfig[sauce] === undefined) {
                 throw new Error('SAUCE value ' + sauce + ' does not exists. Please verify your command line arguments.');
