@@ -17,7 +17,7 @@ $ NODE_ENV=prod grunt smoke
 #### run tests on sauce labs
 Pass a `SAUCE` parameter with the browser name. `shopNemo` is configured to run test on sauce labs Firefox and Chrome browser, more browsers will be added soon.
 
-Note: SAUCE parameter will launch a `SauceConnect` to proxy your tests on clouds.
+Note: SAUCE parameter will launch a `SauceConnect` to proxy the tests.
 
 to run test on sauce labs Firefox browser
 ```javascript
