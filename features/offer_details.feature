@@ -10,7 +10,7 @@ Feature: Offers Details
 
     Given an Affiliate Offer is in Shop
     When I look for offer tile
-#    Then I see offer information on tile
+    Then I see offer information on tile
 
 
   @p1 @affiliate_details_modal
