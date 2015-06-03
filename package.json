@@ -20,6 +20,7 @@
     "nemo-saucelabs": "^1.0.5",
     "nemo-view": "^1.0.0",
     "q": "^1.0.0",
+    "request": "^2.57.0",
     "underscore": "^1.7.0",
     "wait-until": "0.0.2"
   },

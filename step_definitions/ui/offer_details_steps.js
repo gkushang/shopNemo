@@ -10,12 +10,12 @@ module.exports = function offer_details_steps() {
         merchantName    = 'DisneyStore.com',
         offerTitle      = 'Free shipping on $75+';
 
-    this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
-
-        this.allOffersPage = this.homePage.goToOffersPage();
-
-        callback();
-    });
+    //this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
+    //
+    //    this.allOffersPage = this.homePage.goToOffersPage();
+    //
+    //    callback();
+    //});
 
     this.Then(/^I ask for offer details$/, function(done) {
 

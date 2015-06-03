@@ -1,0 +1,43 @@
+{
+  "affiliate_offer": {
+    "advertiser_id": 34132,
+    "bml_id": "274212121156",
+    "shopping_description": "Get $$ off when you Shop through PayPal Shop",
+    "paypal_exclusive": false,
+    "shopping_title" : "$$ Offer: 2222 shopTest",
+    "value_type": "FIXED_DISCOUNT_TYPE",
+    "discount_amount": 10.99,
+    "min_purchase_amount": 50.99,
+    "expiration_date" : "2015-06-04T15:33:01Z",
+    "usage_type": "AUTOMATIC",
+    "discount_percentage": 4,
+    "paypal_terms_and_conditions": "Merchant has authorized PayPal to distribute this offer",
+    "rank": 1,
+    "merchant_terms_and_conditions": "Exclusions apply. See merchant's website for details.",
+    "shopping_url": "http://www.ebay.com/",
+    "shopping_merchant_id": 195,
+    "shopping_category_ids": [
+      2386
+    ],
+    "status": "Submitted",
+    "shopping_program_ranks": [
+      {
+        "rank": 7,
+        "shopping_program_id": 355
+      },
+      {
+        "rank": 4,
+        "shopping_program_id": 356
+      }
+    ],
+    "shopping_distribution": {
+      "start_date": "2015-06-03T15:33:02Z",
+      "end_date": "2015-06-04T15:33:01Z",
+      "status": "Staged"
+    },
+    "promo_duration": "",
+    "promotional_financing_type": "",
+    "hero_offer": false
+  },
+  "name": "$$ Offer: 2222 shopTest"
+}
