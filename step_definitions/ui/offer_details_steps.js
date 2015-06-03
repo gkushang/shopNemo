@@ -10,13 +10,6 @@ module.exports = function offer_details_steps() {
         merchantName    = 'DisneyStore.com',
         offerTitle      = 'Free shipping on $75+';
 
-    //this.Then(/^an Affiliate Offer is in Shop$/, function(callback) {
-    //
-    //    this.allOffersPage = this.homePage.goToOffersPage();
-    //
-    //    callback();
-    //});
-
     this.Then(/^I ask for offer details$/, function(done) {
 
         this.offerModal = this.allOffersPage
@@ -58,10 +51,10 @@ module.exports = function offer_details_steps() {
     });
 
     function assertMerchantName(name) {
-        //name.should.equal(merchantName);
+        name.should.equal(merchantName);
     }
 
     function assertOfferTitle(title) {
-        //title.should.contains(offerTitle);
+        title.should.contains(offerTitle);
     }
 };
