@@ -17,8 +17,5 @@ Feature: Offers Details
   Scenario: Offer Details on modal should match with Affiliate Offer
 
     Given an Affiliate Offer is in Shop
-    When I look for offer tile
-    Then I see offer information on tile
-
-#    When I ask for offer details
-#    Then I am presented with the offer modal
+    When I ask for offer details
+    Then I am presented with the offer modal
