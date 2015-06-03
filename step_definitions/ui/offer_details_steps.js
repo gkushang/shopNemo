@@ -12,6 +12,8 @@ module.exports = function offer_details_steps() {
 
     this.Then(/^I ask for offer details$/, function(done) {
 
+        this.allOffersPage = this.allOffersPage = this.homePage.goToOffersPage();
+
         this.offerModal = this.allOffersPage
                               .seeOfferModal(offerId);
         done();
@@ -32,6 +34,8 @@ module.exports = function offer_details_steps() {
     });
 
     this.Then(/^I look for offer tile$/, function(done)     {
+
+        this.allOffersPage = this.allOffersPage = this.homePage.goToOffersPage();
 
         this.offerTile = this.allOffersPage
                              .searchOfferTile(offerId);
