@@ -1,14 +1,14 @@
 {
   "affiliate_offer": {
     "advertiser_id": 34132,
-    "bml_id": "88493927",
+    "bml_id": "place_holder",
     "shopping_description": "Get $$ off when you Shop through PayPal Shop",
     "paypal_exclusive": false,
-    "shopping_title" : "$$ Offer: 2222 shopTest",
+    "shopping_title" : "place_holder",
     "value_type": "FIXED_DISCOUNT_TYPE",
     "discount_amount": 10.99,
     "min_purchase_amount": 50.99,
-    "expiration_date" : "2015-06-04T15:33:01Z",
+    "expiration_date" : "place_holder",
     "usage_type": "AUTOMATIC",
     "discount_percentage": 4,
     "paypal_terms_and_conditions": "Merchant has authorized PayPal to distribute this offer",
@@ -31,13 +31,12 @@
       }
     ],
     "shopping_distribution": {
-      "start_date": "2015-06-03T15:33:02Z",
-      "end_date": "2015-06-04T15:33:01Z",
+      "start_date": "place_holder",
+      "end_date": "place_holder",
       "status": "Staged"
     },
     "promo_duration": "",
     "promotional_financing_type": "",
     "hero_offer": false
-  },
-  "name": "$$ Offer: 2222 shopTest"
+  }
 }
