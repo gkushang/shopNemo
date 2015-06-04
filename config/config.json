@@ -31,13 +31,14 @@
       "password": "d3c8ad6478886b2cf232876aca18cb0f9f03673c",
       "affiliateOfferEndPoint": "affiliate_offers.json",
      "affiliateMerchantIds" : [192, 194, 195, 204, 209, 212, 223, 335]
-  }
+  },
 
   "mds": {
     "baseUrl": "http://ad.qa.where.com/v1/dg/",
     "distributionUrl": "http://lvs-mds-qa1-dds3001.qa.paypal.com:8080/dds/dds/buyitems/",
-    "offerSearchEndPoint" : "shopoffers"
+    "offerSearchEndPoint" : "shopoffers",
+    "timeOutInSeconds" : 300
   }
-  
+
 }
 

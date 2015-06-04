@@ -19,8 +19,15 @@ module.exports = function cm_steps() {
 
         function getAffiliateOffer(affiliate_offer){
             self.affiliate_offer = affiliate_offer;
-            mds(self.nemo).wait_till_offer_is_available(affiliate_offer.paypal_id).then(callback);
-            //callback();
+            mds(self.nemo)
+                .wait_till_offer_is_available(affiliate_offer)
+                .then(function fulfilled(mdsOffer) {
+                    console.log("MDS offer found: ", JSON.stringify(mdsOffer));
+                    callback()
+                },
+                function rejected(err) {
+                    callback(err)
+                });
         }
     });
 };
