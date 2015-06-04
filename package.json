@@ -8,6 +8,7 @@
   },
   "author": "kushang gajjar <kugajjar@paypal.com>",
   "devDependencies": {
+    "async": "^1.2.0",
     "chai": "^2.3.0",
     "cucumber": "^0.4.9",
     "cucumber-html": "^0.2.3",

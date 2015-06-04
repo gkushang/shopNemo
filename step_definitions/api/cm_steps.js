@@ -4,7 +4,8 @@
 
 'use strict';
 
-var cm = require('../../lib/cm/offer');
+var cm = require('../../lib/cm/offer'),
+    mds = require('../../lib/mds/mds');
 
 module.exports = function cm_steps() {
 
@@ -18,7 +19,8 @@ module.exports = function cm_steps() {
 
         function getAffiliateOffer(affiliate_offer){
             self.affiliate_offer = affiliate_offer;
-            callback();
+            mds(self.nemo).wait_till_offer_is_available(affiliate_offer.paypal_id).then(callback);
+            //callback();
         }
     });
 };
