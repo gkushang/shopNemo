@@ -100,7 +100,7 @@ var myHooks = function () {
         nemo = new Nemo(process.cwd(), configuration().override(), function() {
             self.driver = nemo.driver;
             self.config = nemo._config;
-            self.nemo = nemo
+            self.nemo = nemo;
             deferred.resolve();
         });
 

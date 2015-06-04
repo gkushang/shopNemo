@@ -1,0 +1,42 @@
+{
+  "affiliate_offer": {
+    "advertiser_id": 34132,
+    "bml_id": "place_holder",
+    "shopping_description": "Get $$ off when you Shop through PayPal Shop",
+    "paypal_exclusive": false,
+    "shopping_title" : "place_holder",
+    "value_type": "FIXED_DISCOUNT_TYPE",
+    "discount_amount": 10.99,
+    "min_purchase_amount": 50.99,
+    "expiration_date" : "place_holder",
+    "usage_type": "AUTOMATIC",
+    "discount_percentage": 4,
+    "paypal_terms_and_conditions": "Merchant has authorized PayPal to distribute this offer",
+    "rank": 1,
+    "merchant_terms_and_conditions": "Exclusions apply. See merchant's website for details.",
+    "shopping_url": "http://www.ebay.com/",
+    "shopping_merchant_id": 195,
+    "shopping_category_ids": [
+      2386
+    ],
+    "status": "Submitted",
+    "shopping_program_ranks": [
+      {
+        "rank": 7,
+        "shopping_program_id": 355
+      },
+      {
+        "rank": 4,
+        "shopping_program_id": 356
+      }
+    ],
+    "shopping_distribution": {
+      "start_date": "place_holder",
+      "end_date": "place_holder",
+      "status": "Staged"
+    },
+    "promo_duration": "",
+    "promotional_financing_type": "",
+    "hero_offer": false
+  }
+}

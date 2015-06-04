@@ -23,6 +23,15 @@
       "tunnel-identifier": "shop-tunnel",
       "idle-timeout": 300
     }
+  },
+
+  "cm": {
+      "baseUrl": "https://cm.qa.where.com/api/v3/",
+      "key": "a472583509b43a37eef00becd0a629b11cca7f4b",
+      "password": "d3c8ad6478886b2cf232876aca18cb0f9f03673c",
+      "affiliateOfferEndPoint": "affiliate_offers.json",
+      "affiliateMerchantIds" : [192, 194, 195, 204, 209, 212, 223, 335]
   }
+  
 }
 
