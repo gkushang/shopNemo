@@ -4,7 +4,7 @@
 
 'use strict';
 
-var cm = require('../../lib/cm/offer'),
+var cm = require('../../lib/cm/cm');
     mds = require('../../lib/mds/mds');
 
 module.exports = function cm_steps() {
